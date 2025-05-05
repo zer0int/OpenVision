@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OpenVision: Project Page</title>
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./resources/icon.png">
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero is-primary">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title is-1">OpenVision</h1>
+      <h2 class="subtitle is-4">Fully-Open, Cost-Effective Vision Encoders for Multimodal Learning</h2>
+    </div>
+  </div>
+</section>
+
+<!-- Links -->
+<section class="section">
+  <div class="container has-text-centered">
+    <a class="button is-link" href="./resources/OpenVision.pdf">
+      <span class="icon"><i class="fas fa-file-pdf"></i></span>
+      <span>Download PDF</span>
+    </a>
+    <a class="button is-link" href="https://github.com/UCSC-VLAA/OpenVision">
+      <span class="icon"><i class="fab fa-github"></i></span>
+      <span>Code on GitHub</span>
+    </a>
+    <a class="button is-link" href="https://huggingface.co/datasets/UCSC-VLAA/OpenVision">
+      <span class="icon"><i class="fas fa-database"></i></span>
+      <span>Model Zoo</span>
+    </a>
+  </div>
+</section>
+
+<!-- Abstract -->
+<section class="section">
+  <div class="container">
+    <h2 class="title is-3">Abstract</h2>
+    <div class="content">
+      <p>
+        OpenVision is a fully open family of vision encoders, from 5.9M to 632.1M parameters, matching or
+        surpassing proprietary alternatives like OpenAI’s CLIP in multimodal learning. Built on synthetic
+        captions (Recap-DataComp-1B) and enhanced contrastive+generative training (CLIPS), OpenVision offers
+        flexible trade-offs between efficiency and performance, enabling both edge-ready and high-capacity
+        deployments.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Key Contributions -->
+<section class="section has-background-light">
+  <div class="container">
+    <h2 class="title is-3">Key Contributions</h2>
+    <div class="content">
+      <ul>
+        <li>Completely open training recipe: datasets, codebase, and checkpoints are public.</li>
+        <li>Family of ViT encoders spanning Tiny (5.9M) to Huge (632.1M) parameters.</li>
+        <li>Superior multimodal performance under LLaVA-1.5 and Open-LLaVA-Next benchmarks.</li>
+        <li>Efficient progressive resolution training: 2×–3× faster than proprietary counterparts.</li>
+        <li>Supports flexible patch sizes (8×8, 16×16) for detailed or efficient encoding.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Teaser -->
+<section class="section">
+  <div class="container has-text-centered">
+    <h2 class="title is-3">Performance Overview</h2>
+    <figure class="image is-3by1">
+      <img src="./resources/openvision_teaser_v1.3.pdf" alt="OpenVision vs CLIP Teaser">
+    </figure>
+  </div>
+</section>
+
+<!-- Model Variants -->
+<section class="section has-background-light">
+  <div class="container">
+    <h2 class="title is-3">Model Variants</h2>
+    <table class="table is-fullwidth is-striped">
+      <thead>
+        <tr>
+          <th>Variant</th><th># Params</th><th>Patch Size</th><th>Resolution Stages</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Tiny (Ti)</td><td>5.9M</td><td>8×8 / 16×16</td><td>160→224→384</td></tr>
+        <tr><td>Small (S)</td><td>22.4M</td><td>8×8 / 16×16</td><td>160→224→384</td></tr>
+        <tr><td>Base (B)</td><td>87.4M</td><td>8×8 / 16×16</td><td>84→224→336/384</td></tr>
+        <tr><td>Large (L)</td><td>303.7M</td><td>14×14</td><td>84→224→336/384</td></tr>
+        <tr><td>SoViT-400M</td><td>400M</td><td>14×14</td><td>84→224→384</td></tr>
+        <tr><td>Huge (H)</td><td>632.1M</td><td>14×14</td><td>84→224→336</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- Get Started -->
+<section class="section">
+  <div class="container">
+    <h2 class="title is-3">Get Started</h2>
+    <div class="content">
+      <p>Install and load a pre-trained model with Hugging Face:</p>
+      <pre><code>pip install transformers timm
+
+from transformers import CLIPProcessor, CLIPModel
+model = CLIPModel.from_pretrained('UCSC-VLAA/OpenVision-B-16')
+processor = CLIPProcessor.from_pretrained('UCSC-VLAA/OpenVision-B-16')</code></pre>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>Built by the UCSC-VLAA team. <a href="https://xhl-video.github.io/xianhangli/">Xianhang Li</a>,
+    <a href="https://yanqing0327.github.io/Yanqing.github.io/">Yanqing Liu</a>, Haoqin Tu, Hongru Zhu, Cihang Xie.</p>
+  </div>
+</footer>
+
+</body>
+</html>
