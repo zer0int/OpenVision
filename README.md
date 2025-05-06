@@ -1,4 +1,4 @@
-# OpenVision: Advanced Vision-Language Models Training
+# OpenVision: A Fully-Open, Cost-Effective Family of Advanced Vision Encoders for Multimodal Learning
 
 This repository contains the code for training and fine-tuning vision-language models based on the OpenVision framework. It provides a scalable and efficient approach to training multimodal models on TPU infrastructure.
 
@@ -9,6 +9,24 @@ This repository contains the code for training and fine-tuning vision-language m
 - Implements efficient training strategies including model sharding
 - Supports pre-training and multi-stage fine-tuning 
 - Compatible with CLIP-style vision-language training
+
+## Recent Updates
+
+### May 2025
+- Released OpenVision models + Training Code
+
+
+
+## Model ZOO
+| Model Name | Size | Patch Size | Resolution | IN-1K Top-1 | JAX Weight | PyTorch Weight |
+|------------|------|------------|------------|-------------|------------|----------------|
+| OpenVision-ViT-Tiny | 5M | 16 | 224 | 69.8% | Available | Available |
+| OpenVision-ViT-Tiny | 5M | 16 | 384 | 72.3% | Available | Available |
+| OpenVision-ViT-Base | 86M | 16 | 224 | 79.2% | Available | Available |
+| OpenVision-ViT-Base | 86M | 16 | 336 | 80.7% | Available | Available |
+| OpenVision-ViT-Base | 86M | 16 | 384 | 81.5% | Available | Available |
+| OpenVision-ViT-Large | 307M | 14 | 224 | 83.1% | Available | Available |
+| OpenVision-ViT-Large | 307M | 14 | 336 | 84.6% | Available | Available |
 
 ## Installation
 
