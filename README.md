@@ -18,15 +18,42 @@ This repository contains the code for training and fine-tuning vision-language m
 
 
 ## Model ZOO
-| Model Name | Size | Patch Size | Resolution | IN-1K Top-1 | JAX Weight | PyTorch Weight |
-|------------|------|------------|------------|-------------|------------|----------------|
-| OpenVision-ViT-Tiny | 5M | 16 | 224 | 69.8% | Available | Available |
-| OpenVision-ViT-Tiny | 5M | 16 | 384 | 72.3% | Available | Available |
-| OpenVision-ViT-Base | 86M | 16 | 224 | 79.2% | Available | Available |
-| OpenVision-ViT-Base | 86M | 16 | 336 | 80.7% | Available | Available |
-| OpenVision-ViT-Base | 86M | 16 | 384 | 81.5% | Available | Available |
-| OpenVision-ViT-Large | 307M | 14 | 224 | 83.1% | Available | Available |
-| OpenVision-ViT-Large | 307M | 14 | 336 | 84.6% | Available | Available |
+
+### Vision Encoder Performance on ImageNet-1K
+
+| Model | Size | Patch Size | Resolution | IN-1K Top-1 | JAX Weight | PyTorch Weight |
+|-------|------|------------|------------|-------------|------------|----------------|
+| OpenVision-ViT-Tiny | 5M | 16 | 160 | 46.9% | Available | Available |
+| OpenVision-ViT-Tiny | 5M | 16 | 224 | 49.6% | Available | Available |
+| OpenVision-ViT-Tiny | 5M | 16 | 384 | 51.5% | Available | Available |
+| OpenVision-ViT-Tiny | 5M | 8 | 160 | 51.9% | Available | Available |
+| OpenVision-ViT-Tiny | 5M | 8 | 224 | 53.5% | Available | Available |
+| OpenVision-ViT-Tiny | 5M | 8 | 384 | 53.9% | Available | Available |
+| OpenVision-ViT-Small | 22M | 16 | 160 | 63.5% | Available | Available |
+| OpenVision-ViT-Small | 22M | 16 | 224 | 65.9% | Available | Available |
+| OpenVision-ViT-Small | 22M | 16 | 384 | 67.1% | Available | Available |
+| OpenVision-ViT-Small | 22M | 8 | 160 | 67.3% | Available | Available |
+| OpenVision-ViT-Small | 22M | 8 | 224 | 68.6% | Available | Available |
+| OpenVision-ViT-Small | 22M | 8 | 384 | 68.5% | Available | Available |
+| OpenVision-ViT-Base | 86M | 16 | 160 | 72.4% | Available | Available |
+| OpenVision-ViT-Base | 86M | 16 | 224 | 73.9% | Available | Available |
+| OpenVision-ViT-Base | 86M | 16 | 384 | 74.5% | Available | Available |
+| OpenVision-ViT-Base | 86M | 8 | 160 | 74.8% | Available | Available |
+| OpenVision-ViT-Base | 86M | 8 | 224 | 75.4% | Available | Available |
+| OpenVision-ViT-Base | 86M | 8 | 384 | 75.6% | Available | Available |
+| OpenVision-ViT-Large | 307M | 14 | 84 | * | Available | Available |
+| OpenVision-ViT-Large | 307M | 14 | 224 | 78.5% | Available | Available |
+| OpenVision-ViT-Large | 307M | 14 | 336 | 78.9% | Available | Available |
+| OpenVision-ViT-Large | 307M | 8 | 84 | In progress | Available | Available |
+| OpenVision-ViT-Large | 307M | 8 | 224 | In progress | Available | Available |
+| OpenVision-ViT-Large | 307M | 8 | 336 | In progress | Available | Available |
+| OpenVision-SoViT | 400M | - | 84 | 76.2% | Available | Available |
+| OpenVision-SoViT | 400M | - | 224 | 79.7% | Available | Available |
+| OpenVision-SoViT | 400M | - | 384 | 79.9% | Available | Available |
+| OpenVision-ViT-Huge | 632M | 14 | 84 | * | Available | Available |
+| OpenVision-ViT-Huge | 632M | 14 | 224 | 80.4% | Available | Available |
+
+\* Results pending
 
 ## Installation
 
