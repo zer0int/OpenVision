@@ -37,6 +37,34 @@ The training process is divided into two main phases:
 1. **Pre-training**: Training the model on large-scale datasets with smaller resolution
 2. **Fine-tuning**: Refining the model on higher resolution images
 
+## TPU Pod Training
+
+### Setting Up and Using the tpu_command.sh Tool
+
+`tpu_command.sh` is a convenient tool for synchronizing files between different VMs and managing TPU resources.
+
+#### Prerequisites
+- Add your SSH key to your Google Cloud project's metadata, and GCP will automatically propagate these SSH keys to all VMs
+
+#### Basic Usage
+1. In your local terminal, run: `. ./tpu_command.sh`
+2. Enter `tpu` to launch the interactive menu
+3. Select the function you need:
+   - **ssh**: Connect to TPU VM
+   - **sync dir**: Synchronize directories to all VMs in the TPU Pod
+   - **kill job**: Terminate running jobs
+   - **prepare env**: Set up the TPU environment
+   - **check**: Check if TPU core is occupied
+   - **rm tpu logs**: Clear TPU logs
+   - **exit**: Exit the tool
+
+#### Workflow Example
+1. Select the `sync dir` function, then choose your TPU region, and follow the prompts to upload your code to the Pod
+2. Use `prepare_env` to set up the environment and synchronize all files
+3. Connect to the VM using `ssh`
+4. Start a tmux session on the VM
+5. Execute the `train.sh` script in the tmux session
+
 ### Training Parameters
 
 The main parameters for training can be adjusted in the `scripts/project/openvision/train.sh` script:
@@ -86,8 +114,6 @@ export Flickr_DATA_DIR=gs://your-bucket/flickr30k
 export DATACOMP_PATH=gs://your-bucket/datacomp/shards
 ```
 
-
-
 ## Customization
 
 ### Model Architecture
@@ -106,8 +132,6 @@ Training configurations are defined in `src/configs/openvision.py`. You can:
 2. Change optimization parameters
 3. Adjust data augmentation and tokenization settings
 4. Configure evaluation metrics and checkpointing
-
-
 
 ## License
 

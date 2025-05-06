@@ -6,11 +6,11 @@ ALL_PROJECTS=("focus-album-323718" "priors-medical-ai")
 ALL_ZONE=("us-central2-b"  "europe-west4-a" "us-east1-d")
 
 
-export USER=lixianhang
-export SSH_KEY_DIR=$HOME/.ssh/keys
-export CODEBASE=openvision
-export PROJECT_DIR=/Users/lixianhang/PycharmProjects/$CODEBASE
-export TARGET_DIR=/home/$USER/
+export USER="your_username"
+export SSH_KEY_DIR=$HOME/.ssh/keys # the directory of your ssh keys
+export CODEBASE=openvision # the codebase name
+export PROJECT_DIR=/Users/your_username/PycharmProjects/$CODEBASE # the project directory on your local machine
+export TARGET_DIR=/home/$USER/ # the target directory on the TPU
 
 
 function echo_sleep {
