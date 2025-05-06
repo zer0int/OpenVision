@@ -1,0 +1,88 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+openvision_env/
+venv/
+ENV/
+env/
+.env/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# JAX/TPU specific
+.tfrecord/
+.flax/
+checkpoint/
+checkpoints/
+*.npz
+*.pkl
+*.pt
+
+# Editor specific
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Distribution / packaging
+*.tar.gz
+*.tar
+*.zip
+
+# Logs and temporary files
+logs/
+*.log
+*.log.*
+log.txt
+tmp/
+temp/
+.DS_Store
+
+# Google Cloud
+.gcloud/
+*.json.enc
+.gsutil/
+
+# Data files
+*.tfrecord
+*.tfrecords
+*.h5
+*.hdf5
+*.npy
+
+# Wandb
+wandb/
+
+# Large files
+*.pdf
+
+# User specific files
+config.personal.py
+experiments/
+private/ 
+
+src/convert_upload/*
+scripts/project/openvision/scripts
