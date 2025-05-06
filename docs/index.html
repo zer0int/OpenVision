@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./resources/icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
@@ -16,43 +17,61 @@
     <div class="container has-text-centered">
       <h1 class="title is-1">OpenVision</h1>
       <h2 class="subtitle is-4">Fully-Open, Cost-Effective Vision Encoders for Multimodal Learning</h2>
-    </div>
-  </div>
-</section>
+      <p style="font-size: 1.15em; font-weight: 500; margin-top: 1.2em;">
+        Xianhang Li · Yanqing Liu · Haoqin Tu · Hongru Zhu · Cihang Xie
+      </p>
+      <p style="font-size: 1.05em; color: rgba(255, 255, 255, 0.9);">
+        University of California, Santa Cruz
+      </p>
 
-<!-- Links -->
-<section class="section">
-  <div class="container has-text-centered">
-    <a class="button is-link" href="./resources/OpenVision.pdf">
-      <span class="icon"><i class="fas fa-file-pdf"></i></span>
-      <span>Download PDF</span>
-    </a>
-    <a class="button is-link" href="https://github.com/UCSC-VLAA/OpenVision">
-      <span class="icon"><i class="fab fa-github"></i></span>
-      <span>Code on GitHub</span>
-    </a>
-    <a class="button is-link" href="https://huggingface.co/datasets/UCSC-VLAA/OpenVision">
-      <span class="icon"><i class="fas fa-database"></i></span>
-      <span>Model Zoo</span>
-    </a>
+      <!-- Buttons -->
+      <div class="publication-links" style="margin-top: 1.5em;">
+        <!-- PDF Link -->
+        <span class="link-block">
+          <a href="https://arxiv.org/abs/2406.08478"
+             class="external-link button is-normal is-rounded is-dark">
+            <span class="icon">
+              <img src="./resources/ar.svg" alt="arXiv" style="width: 1.2em; height: 1.2em;" />
+            </span>
+            <span>arXiv</span>
+          </a>
+        </span>
+
+        <!-- Code Link -->
+        <span class="link-block">
+          <a href="https://github.com/UCSC-VLAA/OpenVision"
+             class="external-link button is-normal is-rounded is-dark">
+            <span class="icon">
+              <i class="fab fa-github"></i>
+            </span>
+            <span>Code</span>
+          </a>
+        </span>
+
+        <!-- Model Link -->
+        <span class="link-block">
+          <a href="https://huggingface.co/datasets/UCSC-VLAA/OpenVision"
+             class="external-link button is-normal is-rounded is-dark">
+            <span class="icon">
+              <img src="./resources/gr.svg" alt="HF" style="width: 1.2em; height: 1.2em;" />
+            </span>
+            <span>Model</span>
+          </a>
+        </span>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- Abstract -->
-<section class="section">
-  <div class="container">
-    <h2 class="title is-3">Abstract</h2>
-    <div class="content">
-      <p>
-        OpenVision is a fully open family of vision encoders, from 5.9M to 632.1M parameters, matching or
-        surpassing proprietary alternatives like OpenAI’s CLIP in multimodal learning. Built on synthetic
-        captions (Recap-DataComp-1B) and enhanced contrastive+generative training (CLIPS), OpenVision offers
-        flexible trade-offs between efficiency and performance, enabling both edge-ready and high-capacity
-        deployments.
-      </p>
-    </div>
-  </div>
-</section>
+<div style="max-width: 900px; margin: 2em auto; text-align: left;">
+  <h2 class="title is-3 has-text-centered">Abstract</h2>
+  <p style="font-size: 1.1em; line-height: 1.6;">
+    OpenAI's CLIP, released in early 2021, have long been the go-to choice of vision encoder for building multimodal foundation models. Although recent alternatives such as SigLIP have begun to challenge this status quo, to our knowledge none are fully open: their training data remains proprietary and/or their training recipes are not released.
+This paper fills this gap with OpenVision, a fully-open, cost-effective family of vision encoders that match or surpass the performance of OpenAI’s CLIP when integrated into multimodal frameworks like LLaVA. OpenVision builds on existing works---e.g., CLIPS for training framework and Recap-DataComp-1B for training data---while revealing multiple key insights in enhancing encoder quality and showcasing practical benefits in advancing multimodal models.  By releasing vision encoders spanning from 5.9M to 632.1M parameters, OpenVision offers practitioners a flexible trade-off between capacity and efficiency in building multimodal models: larger models deliver enhanced multimodal performance, while smaller versions enable lightweight, edge-ready multimodal deployments.
+  </p>
+</div>
+
 
 <!-- Key Contributions -->
 <section class="section has-background-light">
@@ -70,15 +89,54 @@
   </div>
 </section>
 
-<!-- Teaser -->
-<section class="section">
+<!-- Detailed Comparisons Section -->
+<section class="section has-background-light">
   <div class="container has-text-centered">
-    <h2 class="title is-3">Performance Overview</h2>
-    <figure class="image is-3by1">
-      <img src="./resources/openvision_teaser_v1.3.pdf" alt="OpenVision vs CLIP Teaser">
-    </figure>
+    <h2 class="title is-3">Detailed Comparisons and Efficiency</h2>
+
+    <!-- OpenVision vs Proprietary -->
+    <div class="content" style="margin-bottom: 2em;">
+      <h3 class="title is-4">OpenVision vs. Proprietary Encoders</h3>
+      <img src="resources/openvision_teaser_v1.3.png" alt="OpenVision vs Proprietary Encoders"
+           style="max-width: 65%; height: auto; border: 1px solid #ccc; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+      <p style="margin-top: 0.8em;">
+        OpenVision encoders match or outperform proprietary models like OpenAI's CLIP and Google's SigLIP across multimodal tasks.
+      </p>
+    </div>
+
+    <!-- LLaVA-1.5 Performance -->
+    <div class="content" style="margin-bottom: 2em;">
+      <h3 class="title is-4">Performance under LLaVA-1.5 Framework</h3>
+      <img src="resources/performance_normalized.png" alt="LLaVA-1.5 Performance Comparison"
+           style="max-width: 70%; height: auto; border: 1px solid #ccc; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+      <p style="margin-top: 0.8em;">
+        OpenVision demonstrates strong performance improvements over existing CLIP models under the LLaVA-1.5 multimodal framework.
+      </p>
+    </div>
+
+    <!-- Open-LLaVA-Next Performance -->
+    <div class="content" style="margin-bottom: 2em;">
+      <h3 class="title is-4">Performance under Open-LLaVA-Next Framework</h3>
+      <img src="resources/performance_normalized_2.png" alt="Open-LLaVA-Next Performance Comparison"
+           style="max-width: 70%; height: auto; border: 1px solid #ccc; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+      <p style="margin-top: 0.8em;">
+        Under Open-LLaVA-Next, OpenVision maintains its competitive edge, excelling particularly in document-heavy multimodal tasks.
+      </p>
+    </div>
+
+    <!-- Efficiency Comparison -->
+    <div class="content">
+      <h3 class="title is-4">Efficiency Comparison</h3>
+      <img src="resources/efficiency_llava1.5_vs_next.png" alt="Efficiency Comparison"
+           style="max-width: 70%; height: auto; border: 1px solid #ccc; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+      <p style="margin-top: 0.8em;">
+        OpenVision achieves superior multimodal performance with significantly reduced training time compared to proprietary alternatives.
+      </p>
+    </div>
+
   </div>
 </section>
+
 
 <!-- Model Variants -->
 <section class="section has-background-light">
