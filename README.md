@@ -41,7 +41,7 @@ This repository contains the code for training and fine-tuning vision-language m
 | OpenVision-ViT-Base | 86M | 8 | 160 | 74.8% | Available | Available |
 | OpenVision-ViT-Base | 86M | 8 | 224 | 75.4% | Available | Available |
 | OpenVision-ViT-Base | 86M | 8 | 384 | 75.6% | Available | Available |
-| OpenVision-ViT-Large | 307M | 14 | 84 | * | Available | Available |
+| OpenVision-ViT-Large | 307M | 14 | 84 | 74.7% | Available | Available |
 | OpenVision-ViT-Large | 307M | 14 | 224 | 78.5% | Available | Available |
 | OpenVision-ViT-Large | 307M | 14 | 336 | 78.9% | Available | Available |
 | OpenVision-ViT-Large | 307M | 8 | 84 | In progress | Available | Available |
@@ -50,7 +50,7 @@ This repository contains the code for training and fine-tuning vision-language m
 | OpenVision-SoViT | 400M | - | 84 | 76.2% | Available | Available |
 | OpenVision-SoViT | 400M | - | 224 | 79.7% | Available | Available |
 | OpenVision-SoViT | 400M | - | 384 | 79.9% | Available | Available |
-| OpenVision-ViT-Huge | 632M | 14 | 84 | * | Available | Available |
+| OpenVision-ViT-Huge | 632M | 14 | 84 | 77.4% | Available | Available |
 | OpenVision-ViT-Huge | 632M | 14 | 224 | 80.4% | Available | Available |
 
 \* Results pending
