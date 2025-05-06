@@ -84,5 +84,5 @@ config.personal.py
 experiments/
 private/ 
 
-src/convert_upload/*
+
 scripts/project/openvision/scripts
