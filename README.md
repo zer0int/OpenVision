@@ -23,35 +23,35 @@ This repository contains the code for training and fine-tuning vision-language m
 
 | Model | Size | Patch Size | Resolution | IN-1K Top-1 | JAX Weight | PyTorch Weight |
 |-------|------|------------|------------|-------------|------------|----------------|
-| OpenVision-ViT-Tiny | 5M | 16 | 160 | 46.9% | Available | Available |
-| OpenVision-ViT-Tiny | 5M | 16 | 224 | 49.6% | Available | Available |
-| OpenVision-ViT-Tiny | 5M | 16 | 384 | 51.5% | Available | Available |
-| OpenVision-ViT-Tiny | 5M | 8 | 160 | 51.9% | Available | Available |
-| OpenVision-ViT-Tiny | 5M | 8 | 224 | 53.5% | Available | Available |
-| OpenVision-ViT-Tiny | 5M | 8 | 384 | 53.9% | Available | Available |
-| OpenVision-ViT-Small | 22M | 16 | 160 | 63.5% | Available | Available |
-| OpenVision-ViT-Small | 22M | 16 | 224 | 65.9% | Available | Available |
-| OpenVision-ViT-Small | 22M | 16 | 384 | 67.1% | Available | Available |
-| OpenVision-ViT-Small | 22M | 8 | 160 | 67.3% | Available | Available |
-| OpenVision-ViT-Small | 22M | 8 | 224 | 68.6% | Available | Available |
-| OpenVision-ViT-Small | 22M | 8 | 384 | 68.5% | Available | Available |
-| OpenVision-ViT-Base | 86M | 16 | 160 | 72.4% | Available | Available |
-| OpenVision-ViT-Base | 86M | 16 | 224 | 73.9% | Available | Available |
-| OpenVision-ViT-Base | 86M | 16 | 384 | 74.5% | Available | Available |
-| OpenVision-ViT-Base | 86M | 8 | 160 | 74.8% | Available | Available |
-| OpenVision-ViT-Base | 86M | 8 | 224 | 75.4% | Available | Available |
-| OpenVision-ViT-Base | 86M | 8 | 384 | 75.6% | Available | Available |
-| OpenVision-ViT-Large | 307M | 14 | 84 | 74.7% | Available | Available |
-| OpenVision-ViT-Large | 307M | 14 | 224 | 78.5% | Available | Available |
-| OpenVision-ViT-Large | 307M | 14 | 336 | 78.9% | Available | Available |
+| OpenVision-ViT-Tiny | 5M | 16 | 160 | 46.9% | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-tiny-patch16-160/tree/main/jax_orbax_weight) | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-tiny-patch16-160) |
+| OpenVision-ViT-Tiny | 5M | 16 | 224 | 49.6% | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-tiny-patch16-224/tree/main/jax_orbax_weight) | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-tiny-patch16-224) |
+| OpenVision-ViT-Tiny | 5M | 16 | 384 | 51.5% | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-tiny-patch16-384/tree/main/jax_orbax_weight) | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-tiny-patch16-384) |
+| OpenVision-ViT-Tiny | 5M | 8 | 160 | 51.9% | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-tiny-patch8-160/tree/main/jax_orbax_weight) | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-tiny-patch8-160) |
+| OpenVision-ViT-Tiny | 5M | 8 | 224 | 53.5% | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-tiny-patch8-224/tree/main/jax_orbax_weight) | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-tiny-patch8-224) |
+| OpenVision-ViT-Tiny | 5M | 8 | 384 | 53.9% | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-tiny-patch8-384/tree/main/jax_orbax_weight) | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-tiny-patch8-384) |
+| OpenVision-ViT-Small | 22M | 16 | 160 | 63.5% | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-small-patch16-160/tree/main/jax_orbax_weight) | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-small-patch16-160) |
+| OpenVision-ViT-Small | 22M | 16 | 224 | 65.9% | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-small-patch16-224/tree/main/jax_orbax_weight) | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-small-patch16-224) |
+| OpenVision-ViT-Small | 22M | 16 | 384 | 67.1% | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-small-patch16-384/tree/main/jax_orbax_weight) | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-small-patch16-384) |
+| OpenVision-ViT-Small | 22M | 8 | 160 | 67.3% | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-small-patch8-160/tree/main/jax_orbax_weight) | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-small-patch8-160) |
+| OpenVision-ViT-Small | 22M | 8 | 224 | 68.6% | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-small-patch8-224/tree/main/jax_orbax_weight) | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-small-patch8-224) |
+| OpenVision-ViT-Small | 22M | 8 | 384 | 68.5% | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-small-patch8-384/tree/main/jax_orbax_weight) | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-small-patch8-384) |
+| OpenVision-ViT-Base | 86M | 16 | 160 | 72.4% | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-base-patch16-160/tree/main/jax_orbax_weight) | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-base-patch16-160) |
+| OpenVision-ViT-Base | 86M | 16 | 224 | 73.9% | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-base-patch16-224/tree/main/jax_orbax_weight) | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-base-patch16-224) |
+| OpenVision-ViT-Base | 86M | 16 | 384 | 74.5% | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-base-patch16-384/tree/main/jax_orbax_weight) | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-base-patch16-384) |
+| OpenVision-ViT-Base | 86M | 8 | 160 | 74.8% | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-base-patch8-160/tree/main/jax_orbax_weight) | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-base-patch8-160) |
+| OpenVision-ViT-Base | 86M | 8 | 224 | 75.4% | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-base-patch8-224/tree/main/jax_orbax_weight) | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-base-patch8-224) |
+| OpenVision-ViT-Base | 86M | 8 | 384 | 75.6% | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-base-patch8-384/tree/main/jax_orbax_weight) | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-base-patch8-384) |
+| OpenVision-ViT-Large | 307M | 14 | 84 | 74.7% | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-large-patch14-84/tree/main/jax_orbax_weight) | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-large-patch14-84) |
+| OpenVision-ViT-Large | 307M | 14 | 224 | 78.5% | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-large-patch14-224/tree/main/jax_orbax_weight) | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-large-patch14-224) |
+| OpenVision-ViT-Large | 307M | 14 | 336 | 78.9% | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-large-patch14-336/tree/main/jax_orbax_weight) | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-large-patch14-336) |
 | OpenVision-ViT-Large | 307M | 8 | 84 | In progress | Available | Available |
-| OpenVision-ViT-Large | 307M | 8 | 224 | In progress | Available | Available |
+| OpenVision-ViT-Large | 307M | 8 | 224 | In progress | Available | Available|
 | OpenVision-ViT-Large | 307M | 8 | 336 | In progress | Available | Available |
-| OpenVision-SoViT | 400M | - | 84 | 76.2% | Available | Available |
-| OpenVision-SoViT | 400M | - | 224 | 79.7% | Available | Available |
-| OpenVision-SoViT | 400M | - | 384 | 79.9% | Available | Available |
-| OpenVision-ViT-Huge | 632M | 14 | 84 | 77.4% | Available | Available |
-| OpenVision-ViT-Huge | 632M | 14 | 224 | 80.4% | Available | Available |
+| OpenVision-SoViT | 412M | 14 | 84 | 76.2% | [Available](https://huggingface.co/UCSC-VLAA/openvision-so400m-patch14-84/tree/main/jax_orbax_weight) | [Available](https://huggingface.co/UCSC-VLAA/openvision-so400m-patch14-84) |
+| OpenVision-SoViT | 412M | 14 | 224 | 79.7% | [Available](https://huggingface.co/UCSC-VLAA/openvision-so400m-patch14-224/tree/main/jax_orbax_weight) | [Available](https://huggingface.co/UCSC-VLAA/openvision-so400m-patch14-224) |
+| OpenVision-SoViT | 412M | 14 | 384 | 79.9% | [Available](https://huggingface.co/UCSC-VLAA/openvision-so400m-patch14-384/tree/main/jax_orbax_weight) | [Available](https://huggingface.co/UCSC-VLAA/openvision-so400m-patch14-384) |
+| OpenVision-ViT-Huge | 632M | 14 | 84 | 77.4% | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-huge-patch14-84/tree/main/jax_orbax_weight) | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-huge-patch14-84) |
+| OpenVision-ViT-Huge | 632M | 14 | 224 | 80.4% | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-huge-patch14-224/tree/main/jax_orbax_weight) | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-huge-patch14-224) |
 
 \* Results pending
 
@@ -142,7 +142,7 @@ The script automatically handles:
 
 Prepare your data according to the format expected by the input pipeline. The training script expects the following datasets:
 
-1. Main training data (e.g., DataComp dataset)
+1. Main training data (e.g., [Recap-DataComp-1B](https://huggingface.co/datasets/UCSC-VLAA/Recap-DataComp-1B) dataset)
 2. Evaluation datasets:
    - ImageNet for classification
    - COCO for image-text retrieval
@@ -165,9 +165,9 @@ export DATACOMP_PATH=gs://your-bucket/datacomp/shards
 
 The framework supports different model architectures which can be specified in the training script:
 
-- Vision models: 'Ti/16', 'S/16', 'B/16', 'L/16' (for Tiny, Small, Base, Large variants)
+- Vision models: 'Ti/16', 'S/16', 'B/16', 'L/14', 'So400m/14','H/14' (for Tiny, Small, Base, Large variants)
 - Text models: Same variants are available for text encoders
-- Text decoder (if needed): Controlled by the `DECODER_NAME` parameter
+- Text decoder: Controlled by the `DECODER_NAME` parameter
 
 ### Training Configuration
 
@@ -178,6 +178,21 @@ Training configurations are defined in `src/configs/openvision.py`. You can:
 3. Adjust data augmentation and tokenization settings
 4. Configure evaluation metrics and checkpointing
 
+
 ## License
 
 This project is licensed under the Apache License 2.0 - see the LICENSE file for details. 
+
+
+
+
+## Acknowledgement
+
+The jax repo is built on [big vision](https://github.com/google-research/big_vision), and the pytorch repo is built on [OpenCLIP](https://github.com/mlfoundations/open_clip). 
+We've also borrowed some code from [TIMM](https://github.com/huggingface/pytorch-image-models) and [MAE](https://github.com/facebookresearch/mae).
+Many thanks to the awesome works from the open-source community!
+
+We are also very grateful that this work is supported by a gift from Open Philanthropy, TPU Research Cloud (TRC) program, and Google Cloud Research Credits program.
+
+
+## Citation
