@@ -18,7 +18,11 @@
       <h1 class="title is-1">OpenVision</h1>
       <h2 class="subtitle is-4">Fully-Open, Cost-Effective Vision Encoders for Multimodal Learning</h2>
       <p style="font-size: 1.15em; font-weight: 500; margin-top: 1.2em;">
-        Xianhang Li · Yanqing Liu · Haoqin Tu · Hongru Zhu · Cihang Xie
+        <a href="https://xhl-video.github.io/xianhangli/" target="_blank" style="color: white; text-decoration: underline;">Xianhang Li</a><sup>*</sup> ·
+        <a href="https://yanqing0327.github.io/Yanqing.github.io/" target="_blank" style="color: white; text-decoration: underline;">Yanqing Liu</a><sup>*</sup> ·
+        <a href="https://www.haqtu.me/" target="_blank" style="color: white; text-decoration: underline;">Haoqin Tu</a> ·
+        <a href="https://scholar.google.com/citations?user=G8NZJLIAAAAJ&hl=en" target="_blank" style="color: white; text-decoration: underline;">Hongru Zhu</a> ·
+        <a href="https://cihangxie.github.io/" target="_blank" style="color: white; text-decoration: underline;">Cihang Xie</a>
       </p>
       <p style="font-size: 1.05em; color: rgba(255, 255, 255, 0.9);">
         University of California, Santa Cruz
@@ -50,7 +54,7 @@
 
         <!-- Model Link -->
         <span class="link-block">
-          <a href="https://huggingface.co/datasets/UCSC-VLAA/OpenVision"
+          <a href="https://huggingface.co/collections/UCSC-VLAA/openvision-681a4c27ee1f66411b4ae919"
              class="external-link button is-normal is-rounded is-dark">
             <span class="icon">
               <img src="./resources/gr.svg" alt="HF" style="width: 1.2em; height: 1.2em;" />
@@ -79,15 +83,16 @@ This paper fills this gap with OpenVision, a fully-open, cost-effective family o
     <h2 class="title is-3">Key Contributions</h2>
     <div class="content">
       <ul>
-        <li>Completely open training recipe: datasets, codebase, and checkpoints are public.</li>
-        <li>Family of ViT encoders spanning Tiny (5.9M) to Huge (632.1M) parameters.</li>
-        <li>Superior multimodal performance under LLaVA-1.5 and Open-LLaVA-Next benchmarks.</li>
-        <li>Efficient progressive resolution training: 2×–3× faster than proprietary counterparts.</li>
-        <li>Supports flexible patch sizes (8×8, 16×16) for detailed or efficient encoding.</li>
+        <li><strong>Fully Open Vision Encoders:</strong> Datasets, training recipes, and model checkpoints are entirely public, fostering reproducibility and transparency in multimodal research.</li>
+        <li><strong>Wide Range of Model Scales:</strong> A comprehensive family of vision encoders from Tiny (5.9M) to Huge (632.1M) parameters, supporting deployment from edge devices to high-capacity servers.</li>
+        <li><strong>Superior Multimodal Performance:</strong> Matches or surpasses proprietary vision encoders (e.g., OpenAI-CLIP, SigLIP) across popular multimodal benchmarks (e.g., LLaVA-1.5, Open-LLaVA-Next).</li>
+        <li><strong>Efficient Progressive Resolution Training:</strong> Demonstrates significant efficiency improvements (2×–3× faster) compared to proprietary counterparts through a progressive, multi-stage resolution training strategy.</li>
+        <li><strong>Flexible Patch-Size Configuration:</strong> Supports adaptive encoding (8×8, 16×16 patches), allowing detailed visual understanding or efficient processing based on practical needs.</li>
       </ul>
     </div>
   </div>
 </section>
+
 
 <!-- Detailed Comparisons Section -->
 <section class="section has-background-light">
@@ -98,7 +103,7 @@ This paper fills this gap with OpenVision, a fully-open, cost-effective family o
     <div class="content" style="margin-bottom: 2em;">
       <h3 class="title is-4">OpenVision vs. Proprietary Encoders</h3>
       <img src="resources/openvision_teaser_v1.3.png" alt="OpenVision vs Proprietary Encoders"
-           style="max-width: 65%; height: auto; border: 1px solid #ccc; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+           style="max-width: 60%; height: auto; border: 1px solid #ccc; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
       <p style="margin-top: 0.8em;">
         OpenVision encoders match or outperform proprietary models like OpenAI's CLIP and Google's SigLIP across multimodal tasks.
       </p>
@@ -108,7 +113,7 @@ This paper fills this gap with OpenVision, a fully-open, cost-effective family o
     <div class="content" style="margin-bottom: 2em;">
       <h3 class="title is-4">Performance under LLaVA-1.5 Framework</h3>
       <img src="resources/performance_normalized.png" alt="LLaVA-1.5 Performance Comparison"
-           style="max-width: 70%; height: auto; border: 1px solid #ccc; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+           style="max-width: 50%; height: auto; border: 1px solid #ccc; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
       <p style="margin-top: 0.8em;">
         OpenVision demonstrates strong performance improvements over existing CLIP models under the LLaVA-1.5 multimodal framework.
       </p>
@@ -118,7 +123,7 @@ This paper fills this gap with OpenVision, a fully-open, cost-effective family o
     <div class="content" style="margin-bottom: 2em;">
       <h3 class="title is-4">Performance under Open-LLaVA-Next Framework</h3>
       <img src="resources/performance_normalized_2.png" alt="Open-LLaVA-Next Performance Comparison"
-           style="max-width: 70%; height: auto; border: 1px solid #ccc; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+           style="max-width: 50%; height: auto; border: 1px solid #ccc; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
       <p style="margin-top: 0.8em;">
         Under Open-LLaVA-Next, OpenVision maintains its competitive edge, excelling particularly in document-heavy multimodal tasks.
       </p>
@@ -127,8 +132,8 @@ This paper fills this gap with OpenVision, a fully-open, cost-effective family o
     <!-- Efficiency Comparison -->
     <div class="content">
       <h3 class="title is-4">Efficiency Comparison</h3>
-      <img src="resources/efficiency_llava1.5_vs_next.png" alt="Efficiency Comparison"
-           style="max-width: 70%; height: auto; border: 1px solid #ccc; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+      <img src="resources/efficiency_llava1.5_vs_next_resolution_size.png" alt="Efficiency Comparison"
+           style="max-width: 50%; height: auto; border: 1px solid #ccc; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
       <p style="margin-top: 0.8em;">
         OpenVision achieves superior multimodal performance with significantly reduced training time compared to proprietary alternatives.
       </p>
@@ -138,50 +143,72 @@ This paper fills this gap with OpenVision, a fully-open, cost-effective family o
 </section>
 
 
-<!-- Model Variants -->
-<section class="section has-background-light">
-  <div class="container">
-    <h2 class="title is-3">Model Variants</h2>
-    <table class="table is-fullwidth is-striped">
-      <thead>
-        <tr>
-          <th>Variant</th><th># Params</th><th>Patch Size</th><th>Resolution Stages</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td>Tiny (Ti)</td><td>5.9M</td><td>8×8 / 16×16</td><td>160→224→384</td></tr>
-        <tr><td>Small (S)</td><td>22.4M</td><td>8×8 / 16×16</td><td>160→224→384</td></tr>
-        <tr><td>Base (B)</td><td>87.4M</td><td>8×8 / 16×16</td><td>84→224→336/384</td></tr>
-        <tr><td>Large (L)</td><td>303.7M</td><td>14×14</td><td>84→224→336/384</td></tr>
-        <tr><td>SoViT-400M</td><td>400M</td><td>14×14</td><td>84→224→384</td></tr>
-        <tr><td>Huge (H)</td><td>632.1M</td><td>14×14</td><td>84→224→336</td></tr>
-      </tbody>
-    </table>
-  </div>
-</section>
-
-<!-- Get Started -->
+<!-- Model Zoo (ImageNet-1K) -->
 <section class="section">
   <div class="container">
-    <h2 class="title is-3">Get Started</h2>
-    <div class="content">
-      <p>Install and load a pre-trained model with Hugging Face:</p>
-      <pre><code>pip install transformers timm
+    <h2 class="title is-3 has-text-centered">Model Zoo (ImageNet-1K)</h2>
+    <p class="has-text-centered" style="max-width: 700px; margin: 0 auto 1.5em auto; font-size: 1.05em;">
+      We report ImageNet-1K Top-1 accuracy across OpenVision variants. All models are available in both JAX and PyTorch formats.
+    </p>
+    <div class="table-container" style="overflow-x: auto; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-radius: 10px;">
+      <table class="table is-bordered is-fullwidth has-text-centered" style="min-width: 900px;">
+        <thead class="has-background-light">
+          <tr>
+            <th>Model</th><th>Size</th><th>Patch</th><th>Resolution</th><th>Top-1</th><th>Link</th><th>JAX</th><th>PyTorch</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>ViT-Tiny</td><td>5M</td><td>16</td><td>160</td><td>46.9%</td><td><a href="https://huggingface.co/UCSC-VLAA/openvision-vit-tiny-patch16-160" target="_blank">HF</a></td><td>✓</td><td>✓</td></tr>
+          <tr><td>ViT-Tiny</td><td>5M</td><td>16</td><td>224</td><td>49.6%</td><td><a href="https://huggingface.co/UCSC-VLAA/openvision-vit-tiny-patch16-224" target="_blank">HF</a></td><td>✓</td><td>✓</td></tr>
+          <tr><td>ViT-Tiny</td><td>5M</td><td>16</td><td>384</td><td>51.5%</td><td><a href="https://huggingface.co/UCSC-VLAA/openvision-vit-tiny-patch16-384" target="_blank">HF</a></td><td>✓</td><td>✓</td></tr>
+          <tr><td>ViT-Tiny</td><td>5M</td><td>8</td><td>160</td><td>51.9%</td><td><a href="https://huggingface.co/UCSC-VLAA/openvision-vit-tiny-patch8-160" target="_blank">HF</a></td><td>✓</td><td>✓</td></tr>
+          <tr><td>ViT-Tiny</td><td>5M</td><td>8</td><td>224</td><td>53.5%</td><td><a href="https://huggingface.co/UCSC-VLAA/openvision-vit-tiny-patch8-224" target="_blank">HF</a></td><td>✓</td><td>✓</td></tr>
+          <tr><td>ViT-Tiny</td><td>5M</td><td>8</td><td>384</td><td>53.9%</td><td><a href="https://huggingface.co/UCSC-VLAA/openvision-vit-tiny-patch8-384" target="_blank">HF</a></td><td>✓</td><td>✓</td></tr>
 
-from transformers import CLIPProcessor, CLIPModel
-model = CLIPModel.from_pretrained('UCSC-VLAA/OpenVision-B-16')
-processor = CLIPProcessor.from_pretrained('UCSC-VLAA/OpenVision-B-16')</code></pre>
+          <tr><td>ViT-Small</td><td>22M</td><td>16</td><td>160</td><td>63.5%</td><td><a href="https://huggingface.co/UCSC-VLAA/openvision-vit-small-patch16-160" target="_blank">HF</a></td><td>✓</td><td>✓</td></tr>
+          <tr><td>ViT-Small</td><td>22M</td><td>16</td><td>224</td><td>65.9%</td><td><a href="https://huggingface.co/UCSC-VLAA/openvision-vit-small-patch16-224" target="_blank">HF</a></td><td>✓</td><td>✓</td></tr>
+          <tr><td>ViT-Small</td><td>22M</td><td>16</td><td>384</td><td>67.1%</td><td><a href="https://huggingface.co/UCSC-VLAA/openvision-vit-small-patch16-384" target="_blank">HF</a></td><td>✓</td><td>✓</td></tr>
+          <tr><td>ViT-Small</td><td>22M</td><td>8</td><td>160</td><td>67.3%</td><td><a href="https://huggingface.co/UCSC-VLAA/openvision-vit-small-patch8-160" target="_blank">HF</a></td><td>✓</td><td>✓</td></tr>
+          <tr><td>ViT-Small</td><td>22M</td><td>8</td><td>224</td><td>68.6%</td><td><a href="https://huggingface.co/UCSC-VLAA/openvision-vit-small-patch8-224" target="_blank">HF</a></td><td>✓</td><td>✓</td></tr>
+          <tr><td>ViT-Small</td><td>22M</td><td>8</td><td>384</td><td>68.5%</td><td><a href="https://huggingface.co/UCSC-VLAA/openvision-vit-small-patch8-384" target="_blank">HF</a></td><td>✓</td><td>✓</td></tr>
+
+          <tr><td>ViT-Base</td><td>86M</td><td>16</td><td>160</td><td>72.4%</td><td><a href="https://huggingface.co/UCSC-VLAA/openvision-vit-base-patch16-160" target="_blank">HF</a></td><td>✓</td><td>✓</td></tr>
+          <tr><td>ViT-Base</td><td>86M</td><td>16</td><td>224</td><td>73.9%</td><td><a href="https://huggingface.co/UCSC-VLAA/openvision-vit-base-patch16-224" target="_blank">HF</a></td><td>✓</td><td>✓</td></tr>
+          <tr><td>ViT-Base</td><td>86M</td><td>16</td><td>384</td><td>74.5%</td><td><a href="https://huggingface.co/UCSC-VLAA/openvision-vit-base-patch16-384" target="_blank">HF</a></td><td>✓</td><td>✓</td></tr>
+          <tr><td>ViT-Base</td><td>86M</td><td>8</td><td>160</td><td>74.8%</td><td><a href="https://huggingface.co/UCSC-VLAA/openvision-vit-base-patch8-160" target="_blank">HF</a></td><td>✓</td><td>✓</td></tr>
+          <tr><td>ViT-Base</td><td>86M</td><td>8</td><td>224</td><td>75.4%</td><td><a href="https://huggingface.co/UCSC-VLAA/openvision-vit-base-patch8-224" target="_blank">HF</a></td><td>✓</td><td>✓</td></tr>
+          <tr><td>ViT-Base</td><td>86M</td><td>8</td><td>384</td><td>75.6%</td><td><a href="https://huggingface.co/UCSC-VLAA/openvision-vit-base-patch8-384" target="_blank">HF</a></td><td>✓</td><td>✓</td></tr>
+
+          <tr><td>ViT-Large</td><td>307M</td><td>14</td><td>84</td><td>74.7%</td><td><a href="https://huggingface.co/UCSC-VLAA/openvision-vit-large-patch14-84" target="_blank">HF</a></td><td>✓</td><td>✓</td></tr>
+          <tr><td>ViT-Large</td><td>307M</td><td>14</td><td>224</td><td>78.5%</td><td><a href="https://huggingface.co/UCSC-VLAA/openvision-vit-large-patch14-224" target="_blank">HF</a></td><td>✓</td><td>✓</td></tr>
+          <tr><td>ViT-Large</td><td>307M</td><td>14</td><td>336</td><td>78.9%</td><td><a href="https://huggingface.co/UCSC-VLAA/openvision-vit-large-patch14-336" target="_blank">HF</a></td><td>✓</td><td>✓</td></tr>
+          <tr><td>SoViT-400M</td><td>400M</td><td>14</td><td>84</td><td>76.2%</td><td><a href="https://huggingface.co/UCSC-VLAA/openvision-vit-so400m-patch14-84" target="_blank">HF</a></td><td>✓</td><td>✓</td></tr>
+          <tr><td>SoViT-400M</td><td>400M</td><td>14</td><td>224</td><td>79.7%</td><td><a href="https://huggingface.co/UCSC-VLAA/openvision-vit-so400m-patch14-224" target="_blank">HF</a></td><td>✓</td><td>✓</td></tr>
+          <tr><td>SoViT-400M</td><td>400M</td><td>14</td><td>384</td><td>79.9%</td><td><a href="https://huggingface.co/UCSC-VLAA/openvision-vit-so400m-patch14-384" target="_blank">HF</a></td><td>✓</td><td>✓</td></tr>
+          <tr><td>ViT-Huge</td><td>632M</td><td>14</td><td>84</td><td>77.4%</td><td><a href="https://huggingface.co/UCSC-VLAA/openvision-vit-huge-patch14-84" target="_blank">HF</a></td><td>✓</td><td>✓</td></tr>
+          <tr><td>ViT-Huge</td><td>632M</td><td>14</td><td>224</td><td>80.4%</td><td><a href="https://huggingface.co/UCSC-VLAA/openvision-vit-huge-patch14-224" target="_blank">HF</a></td><td>✓</td><td>✓</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </section>
 
+
+
 <!-- Footer -->
 <footer class="footer">
   <div class="content has-text-centered">
-    <p>Built by the UCSC-VLAA team. <a href="https://xhl-video.github.io/xianhangli/">Xianhang Li</a>,
-    <a href="https://yanqing0327.github.io/Yanqing.github.io/">Yanqing Liu</a>, Haoqin Tu, Hongru Zhu, Cihang Xie.</p>
+    <p>
+      Built by the UCSC-VLAA team.
+      <a href="https://xhl-video.github.io/xianhangli/" target="_blank">Xianhang Li</a>,
+      <a href="https://yanqing0327.github.io/Yanqing.github.io/" target="_blank">Yanqing Liu</a>,
+      <a href="https://www.haqtu.me/" target="_blank">Haoqin Tu</a>,
+      <a href="https://scholar.google.com/citations?user=G8NZJLIAAAAJ&hl=en" target="_blank">Hongru Zhu</a>,
+      <a href="https://cihangxie.github.io/" target="_blank">Cihang Xie</a>.
+    </p>
   </div>
 </footer>
+
 
 </body>
 </html>
