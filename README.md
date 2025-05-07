@@ -192,7 +192,7 @@ The jax repo is built on [big vision](https://github.com/google-research/big_vis
 We've also borrowed some code from [TIMM](https://github.com/huggingface/pytorch-image-models) and [MAE](https://github.com/facebookresearch/mae).
 Many thanks to the awesome works from the open-source community!
 
-We are also very grateful that this work is supported by a gift from Open Philanthropy, TPU Research Cloud (TRC) program, and Google Cloud Research Credits program.
+We are also very grateful that this work is partially supported by TPU Research Cloud (TRC) program, and Google Cloud Research Credits program.
 
 
 ## Citation
