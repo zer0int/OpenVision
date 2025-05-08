@@ -1,4 +1,14 @@
-# OpenVision: A Fully-Open, Cost-Effective Family of Advanced Vision Encoders for Multimodal Learning
+# OpenVision <img src="assets/icon.png" width="36"> : A Fully-Open, Cost-Effective Family of Advanced Vision Encoders for Multimodal Learning
+
+<p align="center">
+  🌐 <a href="https://ucsc-vlaa.github.io/OpenVision/" target="_blank">Project Page</a>  
+  • <img src="./assets/ar.svg" alt="Arxiv Logo" style="height: 1em; vertical-align: middle; margin-right: 0.3em;">
+  <a href="https://arxiv.org/abs/2505.04601" target="_blank">Arxiv</a>  
+  • 💻  <a href="https://github.com/UCSC-VLAA/OpenVision" target="_blank">Code</a>  
+   • <img src="./assets/hg.svg" alt="Hugging Face Logo" style="height: 1em; vertical-align: middle; margin-right: 0.3em;">
+  <a href="https://huggingface.co/collections/UCSC-VLAA/openvision-681a4c27ee1f66411b4ae919" target="_blank">OpenVision Family</a>  
+
+</p>
 
 This repository contains the code for training and fine-tuning vision-language models based on the OpenVision framework. It provides a scalable and efficient approach to training multimodal models on TPU infrastructure.
 
@@ -9,6 +19,10 @@ This repository contains the code for training and fine-tuning vision-language m
 - Implements efficient training strategies including model sharding
 - Supports pre-training and multi-stage fine-tuning 
 - Compatible with CLIP-style vision-language training
+
+<p align="center">
+  <img src="assets/openvision_teaser_v1.3.png" width="580">
+</p>
 
 ## Recent Updates
 
@@ -196,3 +210,13 @@ We are also very grateful that this work is partially supported by TPU Research 
 
 
 ## Citation
+If you find our work useful to your research and applications, please consider citing the paper and staring the repo :)
+
+```bibtex
+@article{li2025openvision,
+  title   = {OpenVision: A Fully-Open, Cost-Effective Family of Advanced Vision Encoders for Multimodal Learning},
+  author  = {Li, Xianhang and Liu, Yanqing and Tu, Haoqin and Zhu, Hongru and Xie, Cihang},
+  journal = {arXiv preprint arXiv:2505.04601},
+  year    = {2025}
+}
+```
