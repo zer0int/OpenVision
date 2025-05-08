@@ -47,9 +47,9 @@ This repository contains the code for training and fine-tuning vision-language m
 | OpenVision-ViT-Large | 307M | 8 | 84 | In progress | Available | Available |
 | OpenVision-ViT-Large | 307M | 8 | 224 | In progress | Available | Available|
 | OpenVision-ViT-Large | 307M | 8 | 336 | In progress | Available | Available |
-| OpenVision-SoViT | 412M | 14 | 84 | 76.2% | [Available](https://huggingface.co/UCSC-VLAA/openvision-so400m-patch14-84/tree/main/jax_orbax_weight) | [Available](https://huggingface.co/UCSC-VLAA/openvision-so400m-patch14-84) |
-| OpenVision-SoViT | 412M | 14 | 224 | 79.7% | [Available](https://huggingface.co/UCSC-VLAA/openvision-so400m-patch14-224/tree/main/jax_orbax_weight) | [Available](https://huggingface.co/UCSC-VLAA/openvision-so400m-patch14-224) |
-| OpenVision-SoViT | 412M | 14 | 384 | 79.9% | [Available](https://huggingface.co/UCSC-VLAA/openvision-so400m-patch14-384/tree/main/jax_orbax_weight) | [Available](https://huggingface.co/UCSC-VLAA/openvision-so400m-patch14-384) |
+| OpenVision-SoViT | 412M | 14 | 84 | 76.2% | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-so400m-patch14-84/tree/main/jax_orbax_weight) | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-so400m-patch14-84) |
+| OpenVision-SoViT | 412M | 14 | 224 | 79.7% | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-so400m-patch14-224/tree/main/jax_orbax_weight) | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-so400m-patch14-224) |
+| OpenVision-SoViT | 412M | 14 | 384 | 79.9% | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-so400m-patch14-384/tree/main/jax_orbax_weight) | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-so400m-patch14-384) |
 | OpenVision-ViT-Huge | 632M | 14 | 84 | 77.4% | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-huge-patch14-84/tree/main/jax_orbax_weight) | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-huge-patch14-84) |
 | OpenVision-ViT-Huge | 632M | 14 | 224 | 80.4% | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-huge-patch14-224/tree/main/jax_orbax_weight) | [Available](https://huggingface.co/UCSC-VLAA/openvision-vit-huge-patch14-224) |
 
