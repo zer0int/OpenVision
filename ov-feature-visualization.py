@@ -51,15 +51,15 @@ from open_clip.model import CLIP
 
 # Argument Parsing
 def parse_arguments():
-    parser = argparse.ArgumentParser(description='REG-CLIP Fusion MLP feature activation max visualization')
-    parser.add_argument('--use_model', default="F:/openvision-vit-large-patch14-224", help="Path to REG-XGATED CLIP model")
+    parser = argparse.ArgumentParser(description='OpenVision model feature activation max visualization')
+    parser.add_argument('--use_model', default="F:/openvision-vit-large-patch14-224", help="Path to OpenVision model")
     parser.add_argument('--layer_range', default="0-23", type=str, help="Which layers to visualize; continuous range ('5-10') or discrete values ('5,6,8').")
     parser.add_argument('--feature_range', default="37-42", type=str, help="Which features to visualize; continuous range ('50-90') or discrete values ('500,1000)'.")
     parser.add_argument('--steps', default=400, type=int, help="Number of image optimization steps; default: 400")
     parser.add_argument('--lr', default=1.0, type=float, help="Learning Rate; default: 1.0")
     parser.add_argument('--tv', default=1.0, type=float, help="Total Variation Loss; default: 1.0")
     parser.add_argument('--coeff', default=0.00005, type=float, help="For tv*coeff. 0.00005 -> sharp and noisy image; 0.05 -> soft, blurry; default: 0.00005")
-    parser.add_argument("--output_folder", default='ovFeatureViz', help="Folder to save output image; default: FeatureViz/NORMAL-MLP")
+    parser.add_argument("--output_folder", default='ovFeatureViz', help="Folder to save output image; default: 'ovFeatureViz'")
     parser.add_argument("--save_intermediate", action='store_true', help="Save intermediate steps, too, for a quick look. Saves to folder: 'steps'")
     parser.add_argument("--deterministic", action='store_true', help="Use deterministic behavior")
     return parser.parse_args()
