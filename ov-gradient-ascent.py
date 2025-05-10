@@ -45,7 +45,7 @@ from transformers import AutoTokenizer
 
 # Argument Parsing; rarely needed, but just CTRL+F for: Additional CONFIGURATION
 def parse_arguments():
-    parser = argparse.ArgumentParser(description='CLIP gradient ascent')
+    parser = argparse.ArgumentParser(description='OpenVision gradient ascent')
     parser.add_argument('--batch_size', default=13, type=int)
     parser.add_argument('--use_model', default="F:/openvision-vit-large-patch14-224", help="Path to an OpenVision model")
     parser.add_argument('--use_image', type=str, default="testcat/catdog.png", help="Path to image")
