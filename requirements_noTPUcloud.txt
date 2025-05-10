@@ -1,0 +1,37 @@
+# === Core framework ===
+jax==0.4.38
+jaxlib==0.4.38
+flax==0.10.2
+optax
+numpy
+protobuf==3.20.3
+orbax-checkpoint==0.7.0
+
+# === Data and Datasets ===
+tensorflow-datasets
+sentencepiece==0.1.97
+
+# === Transformers, captioning, tokenizer ===
+transformers
+tiktoken
+open_clip_torch
+diffusers
+einops
+
+# === Logging and experiment tracking ===
+#wandb
+tensorboardx
+
+# === I/O ===
+safetensors
+blobfile
+
+# === Development, debugging ===
+ipdb
+overrides
+
+# === Text/semantic processing ===
+nltk
+
+# === PyTorch ===
+# Download from https://pytorch.org/get-started/locally/

@@ -1,0 +1,13 @@
+open_clip_torch
+transformers
+diffusers
+einops
+sentencepiece==0.1.97
+numpy
+safetensors
+blobfile
+kornia
+torchvision
+pillow
+colorama
+# Download PyTorch from https://pytorch.org/get-started/locally/
