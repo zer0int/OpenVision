@@ -1,3 +1,38 @@
+## 10/May/2025, add: A quick peek at OpenVision models (PyTorch)! 🤗
+
+- Install requirements_local.txt (minimal config)
+- Download a model: [huggingface.co/UCSC-VLAA/openvision-vit-large-patch14-224](https://huggingface.co/UCSC-VLAA/openvision-vit-large-patch14-224/tree/main)
+- Note: You don't need jax_orbax_weight for the examples below (feel free to delete that dir)
+
+- Quick test on adversarial (text on image) set from `--image_dir testcat` (default):
+```
+python ov-zero-shot-test.py --use_model /path/to/openvision-vit-large-patch14-224
+```
+![openvision-zeroshot](https://github.com/user-attachments/assets/e07b5c46-6b67-4689-9b01-82f85f988c12)
+
+
+- Gradient Ascent Text Embeddings -> cos sim <- Image Embeddings
+- `--deterministic` for reproducible results; omit for diverse outputs
+- Get's a "model's opinion" about an image (or a batch: `--img_folder /folder/path`):
+```
+python ov-gradient-ascent.py --use_model /path/to/model --use_image testcat/catdog.png --deterministic
+```
+
+![openvision-gradient-ascent](https://github.com/user-attachments/assets/9086a6f7-34cc-4bf2-86a0-0bf5963a9f31)
+
+
+- Feature activation max visualization; visualize features of the Vision Transformer
+- `--help` to see all arguments / change which features to visualize
+```
+python ov-feature-visualization.py --use_model /path/to/openvision-vit-large-patch14-224
+```
+
+![openvision-layers-feature-viz](https://github.com/user-attachments/assets/d9f3c046-6191-41ad-bbdc-1e77195816b3)
+
+
+----------
+Original README.md below:
+----------
 # OpenVision <img src="assets/icon.png" width="36"> : A Fully-Open, Cost-Effective Family of Advanced Vision Encoders for Multimodal Learning
 
 <p align="center">
