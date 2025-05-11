@@ -341,6 +341,7 @@ def main():
     # === Preprocessing ===
     transform = transforms.Compose([
         transforms.Resize((image_size, image_size)),
+        lambda image: image.convert("RGB"),
         transforms.ToTensor(),
         transforms.Normalize(mean=mean, std=std),
     ])
