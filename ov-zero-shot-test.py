@@ -43,6 +43,7 @@ std = cfg["preprocess_cfg"]["std"]
 context_len = cfg["model_cfg"]["text_cfg"]["context_length"]
 tokenizer_name = cfg["model_cfg"]["text_cfg"]["hf_tokenizer_name"]
 model_cfg = cfg["model_cfg"]
+image_size = cfg["model_cfg"]["vision_cfg"].get("image_size")
 vision_cfg = cfg["model_cfg"]["vision_cfg"]
 text_cfg = cfg["model_cfg"]["text_cfg"]
 clip_args = {k: v for k, v in model_cfg.items() if k not in ("vision_cfg", "text_cfg")}
@@ -69,7 +70,8 @@ print("\n----------------------------------------\n")
 
 # === Preprocess ===
 transform = transforms.Compose([
-    transforms.Resize((224, 224)),
+    transforms.Resize((image_size, image_size)),
+    lambda image: image.convert("RGB"),
     transforms.ToTensor(),
     transforms.Normalize(mean=mean, std=std),
 ])
